@@ -1,0 +1,4 @@
+<main>
+    <app-filter [categories]="categories" (onFilter)="filter($event)" class="side-bar"></app-filter>
+    <app-content [cocktails]="cocktails" [isEndList]="isEndList" class="content"></app-content>
+</main>

@@ -1,0 +1,8 @@
+<div class="container">
+    <label class="checkbox" *ngFor="let category of categories">
+        <input  type="checkbox" [checked]="category.selected"
+        (change)="category.selected = !category.selected"/>
+        <span>{{category.strCategory}}</span>
+    </label>
+    <button class="btn" (click)="filter()">Apply</button>
+</div>

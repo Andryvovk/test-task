@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="category" *ngFor='let cocktail of cocktails'>
+        <div class="category-title">{{cocktail.ctrName}}</div>
+          <div class="cards" #anchor >
+            <div class="card" *ngFor='let item of cocktail'>
+                <img class="coctail-img" [src]="item.strDrinkThumb" width="150px" height="150px">
+                <p class="coctail-name">{{item.strDrink}}</p>
+             </div>
+          </div> 
+    </div>
+    <div class="list-end" *ngIf="isEndList">
+        <p>Sorry, but we don`t have any cocktails</p>
+    </div>
+</div>

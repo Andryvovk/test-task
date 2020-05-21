@@ -1,0 +1,25 @@
+.container {
+    padding: 30px;
+    text-align: center;
+    .category-title {
+       font-size: 24px;
+       color: #818181;
+       text-align: left;
+       border-bottom: 1px solid #D0D0D0;
+    }
+    .cards {
+        padding-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        .card {
+            padding: 4px;
+            flex: 0 1 calc(20% - 8px);
+            font-size: 18px;
+        }
+    }
+   .list-end {
+       font-size: 24px;
+       font-weight: bold;
+   } 
+}
